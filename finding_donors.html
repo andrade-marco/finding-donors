@@ -14428,7 +14428,7 @@ Look at the graph at the bottom left from the cell above(the visualization creat
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer: </strong></p>
 <p>Based on the preliminary evaluation of the three models chosen, the AdaBoost with Decision Trees model is the most efficient and effective model. When 100% of the training data is used, the AdaBoost model shows the highest F-score, at around 0.7, while also showing extremely low times for estimation. This means we are getting relatively good results - keeping in mind that these are results from an un-tuned model - in short amounts of computation time (under 1 second).</p>
-<p>The AdaBoost model also greatly outperforms the naive predictor - which has a F-score of approximately 0.3. This indicates that the model is going in the right direction, and is therefore suitable for classifying the potential donors.</p>
+<p>The AdaBoost model using decision trees is suitable for the problem. Firstly, we have a relatively large number of observations and features, which this kind of model works well on. Secondly, it is possible that some of the relationships are non-linear and features may be correlated. Although some models cannot account for those aspects or perform poorly under those circumstances (e.g. Logistic regression), the AdaBoost with decision trees makes no assumptions regarding the data and can account for non-linear effects. Lastly, the model greatly outperforms the naive predictor - which has a F-score of approximately 0.3 - and outperforms the other model when applied to the testing set. This indicates that the model is going in the right direction, and is therefore suitable for classifying the potential donors.</p>
 
 </div>
 </div>
